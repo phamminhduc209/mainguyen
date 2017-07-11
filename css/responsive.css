@@ -1,0 +1,113 @@
+/*------------------------------------------------------------------
+[Table of contents]
+1. 	[Styles for devices(<1200px)]
+2. 	[Styles for devices(<992px)]
+3. 	[Styles for devices(>992px)]
+4. 	[Styles for devices(<991px)]
+5. 	[Styles for devices(>=992px and <=481px)]
+6. 	[Styles for devices(<600px)]
+7. 	[Styles for devices(<480px)]
+8. 	[Styles for devices(<375px)]
+9. 	[Styles for devices(<320px)]
+10. Compare
+------------------------*/
+/*----------------
+[Styles for devices(<1200px)]
+*/
+@media (min-width: 1200px) {
+}
+/*----------------
+[Styles for devices(<992px)]
+*/
+@media (max-width: 992px) {
+	
+}
+/*----------------
+[Styles for devices(>992px)]
+*/
+@media (min-width: 992px) {
+
+}
+/*----------------
+[Styles for devices(<991px)]
+*/
+@media (max-width: 991px) {
+
+}
+/*----------------
+[Styles for devices(>=992px and <=481px)]
+*/
+@media (max-width: 992px) and (min-width: 320px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/*----------------
+[Styles for devices(<767px)]
+*/
+@media (max-width: 767px) {
+	
+}
+/*----------------
+[Styles for devices(<600px)]
+*/
+@media (max-width: 600px) {
+	
+}
+/*----------------
+[Styles for devices(<480px)]
+*/
+@media (max-width: 480px) {
+	
+}
+/*----------------
+[Styles for devices(<375px)]
+*/
+@media (max-width: 375px) {
+	
+}
+
+/*----------------
+[Styles for devices(<320px)]
+*/
+@media (max-width: 320px) {
+	
+}
+
+/*===== 5 Columns =====*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-5ths {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left;
+  }
+}
