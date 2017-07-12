@@ -17,6 +17,7 @@
 @import url(../lib/bootstrap/bootstrap.min.css);
 @import url(../lib/font-awesome/font-awesome.min.css);
 @import url(../lib/carousel/owl.carousel.min.css);
+@import url(../lib/lightbox/css/lightbox.min.css);
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext,vietnamese');
 @font-face {
   font-family: 'Arial';
@@ -113,8 +114,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5px;
   padding: 0;
 }
+.block_breadcrumb .breadcrumb li a {
+  color: #999;
+}
 .block_breadcrumb .breadcrumb li.active {
-  color: #888;
+  color: #414141;
 }
 .block_breadcrumb .breadcrumb>li+li:before {
   padding: 0 5px;
@@ -125,6 +129,17 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   padding-top: 20px;
+}
+
+/*===== Product Detail=====*/
+.block_detail_wrap h1 {
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
+  color: #000;
+  font-size: 26px;
+  font-family: 'UTMCafeta', Arial, sans-serif;
+  white-space: nowrap;
 }
 
 /*===== Header =====*/
@@ -840,7 +855,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .list .product_item a {
   display: block;
@@ -897,7 +912,23 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 10px;
   padding: 0px 4px;
   text-transform: uppercase;
-  line-height: 13px;
+  line-height: 15px;
+}
+.list .product_item .product_info .sale_off {
+  background: #ff6600;
+  color: #fff;
+  border: 1px solid #ff6600;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  padding: 0px 4px;
+  text-transform: uppercase;
+  line-height: 15px;
 }
 .product_item .product_detail {
   text-align: left;
@@ -981,6 +1012,39 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 20px;
   padding-bottom: 20px;
   overflow: hidden;
+}
+.footer_bottom .logo {
+  float: left;
+}
+.footer_bottom .logo img {
+  width: 193px;
+}
+.footer_bottom .copyright {
+  float: left;
+  margin-left: 30px;
+  font-size: 10px;
+  color: #999;
+  line-height: 1.9;
+}
+.footer_bottom .block_payment, .footer_bottom .block_industry {
+  padding-right: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #bababa;
+  text-transform: uppercase;
+}
+.footer_bottom .block_payment p {
+  margin-bottom: 10px;
+}
+.footer_bottom .block_payment i {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 3px;
+}
+.footer_bottom .block_indus img {
+  width: 125px;
 }
 
 /*===== Back To Top =====*/
