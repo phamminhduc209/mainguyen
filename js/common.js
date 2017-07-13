@@ -34,7 +34,7 @@
   });
 
   /*  [ Sticky Menu ] */
-  $('.fix-header').sticky({ topSpacing: 0 });
+  $('.fixed').sticky({ topSpacing: 0 });
 
   /*[ hover dropdown ]
   - - - - - - - - - - - - - - - - - - - - */
