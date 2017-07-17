@@ -167,11 +167,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Logo */
 .block_header_top .block_logo {
-  /* padding-top: 15px; */
+  
 }
-/*.block_header_top .block_logo img {
-  margin: 0 auto;
-}*/
+
 /* Search */
 .block_search {
   padding-top: 40px;
@@ -251,8 +249,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 
+/* Facebook */
 .block_face {
   padding-top: 28px;
+}
+.block_face ..fb_iframe_widget {
+  width: 100%;
+  max-width: 100%;
 }
 
 /*===== Menu =====*/
