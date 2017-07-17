@@ -167,14 +167,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Logo */
 .block_header_top .block_logo {
-  padding-top: 15px;
+  /* padding-top: 15px; */
 }
 .block_header_top .block_logo img {
-  width: 82%;
+  margin: 0 auto;
 }
 /* Search */
 .block_search {
-  padding-top: 14px;
+  padding-top: 40px;
 }
 .block_search .block_search_inner {
   position: relative;
@@ -249,6 +249,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   margin-left: 5px;
+}
+
+.block_face {
+  padding-top: 28px;
 }
 
 /*===== Menu =====*/
@@ -1078,15 +1082,13 @@ h1, h2, h3, h4, h5, h6 {
 .footer_bottom .logo {
   float: left;
 }
-.footer_bottom .logo img {
-  width: 193px;
-}
 .footer_bottom .copyright {
   float: left;
   margin-left: 30px;
   font-size: 10px;
   color: #999;
   line-height: 1.9;
+  padding-top: 5px;
 }
 .footer_bottom .block_payment, .footer_bottom .block_industry {
   padding-right: 0px;
