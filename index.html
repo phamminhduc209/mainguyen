@@ -71,7 +71,7 @@
 											<div id="block_suggestions"></div>
 										</div>
 									</form>
-									<a href="#" class="cart-link scart_popup">
+									<a href="javascript:void(0);" class="cart-link" data-toggle="modal" data-target="#scart_popup">
 										<i class="fa fa-shopping-cart"></i>Giỏ hàng<span class="order_total_quantity">0</span>
 									</a>
 								</div>
@@ -154,7 +154,7 @@
 											</ul>
 										</li><!-- level0 -->
 										<li class="level0 parent">
-											<a class="" href="#">Máy tính bảng</a>
+											<a class="" href="#">Máy Tính Bảng</a>
 											<ul class="level0 submenu">
 												<li class="level1">
 													<a href="#" title="">
@@ -1421,6 +1421,25 @@
 		<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
       		<i class="fa fa-angle-up" aria-hidden="true"></i>
     	</a><!-- Return To Top -->
+
+    	<!-- Modal -->
+		<div class="modal fade in" id="scart_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: block; padding-right: 17px;">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h2 class="modal-title" id="myModalLabel">
+		        	<i class="fa fa-shopping-cart"></i> GIỎ HÀNG CỦA TÔI
+		        	<span>(Đang có <strong class="order_total_quantity">0</strong> sản phẩm)</span>
+		        	<span><a href="javascript:;" class="empty_cart"><i class="fa fa-remove"></i>Làm trống giỏ hàng</a></span>
+		        </h2>
+		      </div>
+		      <div class="modal-body">
+		        
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	</div><!-- /wrapper -->
 
 	<!-- ===== JS ===== -->

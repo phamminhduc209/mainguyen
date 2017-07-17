@@ -1727,6 +1727,54 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
+/*===== Modal Cart =====*/
+#scart_popup .modal-content {
+  border: none;
+  border-radius: 0;
+  padding: 15px;
+}
+#scart_popup .modal-header {
+  border-bottom: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+#scart_popup .modal-header .modal-title {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+#scart_popup .modal-header .modal-title span {
+  font-size: 14px;
+  margin-left: 20px;
+}
+#scart_popup .modal-header .modal-title span .empty_cart {
+  background-color: #DDD;
+  color: #111;
+  font-weight: lighter;
+  padding: 5px 10px;
+}
+.empty_cart > i {
+  margin-right: 10px;
+  -webkit-transition: All 0.3s ease-out;
+  -moz-transition: All 0.3s ease-out;
+  -ms-transition: All 0.3s ease-out;
+  -o-transition: All 0.3s ease-out;
+  transition: All 0.3s ease-out;
+}
+.empty_cart:hover > i {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  /* transform-origin: 50% 50%; */
+  color: #111;
+}
+#scart_popup .modal-body {
+  position: relative;
+  padding: 0;
+}
+
 /*===== Back To Top =====*/
 .td-scroll-up {
   cursor: pointer;
