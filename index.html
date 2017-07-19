@@ -1423,54 +1423,124 @@
     	</a><!-- Return To Top -->
 
     	<!-- Modal -->
-		<div class="modal fade in" id="scart_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: block; padding-right: 17px;">
-		  <div class="modal-dialog modal-lg" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h2 class="modal-title" id="myModalLabel">
-		        	<i class="fa fa-shopping-cart"></i> GIỎ HÀNG CỦA TÔI
-		        	<span>(Đang có <strong class="order_total_quantity">0</strong> sản phẩm)</span>
-		        	<span><a href="javascript:;" class="empty_cart"><i class="fa fa-remove"></i>Làm trống giỏ hàng</a></span>
-		        </h2>
-		      </div>
-		      <div class="modal-body">
-		        <div class="cart-box row">
-		        	<div class="col-md-8">
-		        		<form action="#" method="POST" id="frm_order_items">
-							<div class="table cart-tbl">
-								<div class="table-row thead">
-					                <div class="table-cell no-col">&nbsp;</div>
-					                <div class="table-cell product-col">Sản phẩm</div>
-					                <div class="table-cell price-col t-r">Đơn giá (đ)</div>
-					                <div class="table-cell numb-col t-c">Số lượng</div>
-					                <div class="table-cell total-col t-r">Thành tiền (đ)</div>
-					            </div><!-- /table-row -->
-					            <div class="tr-wrap">
-					            	<div class="table-cell no-col"><span>1</span></div>
-					            	<div class="table-cell product-col">
-					            		<figure class="img-prod">
-					            			<img alt="Sony High-Power Home Audio System MHC-V50D" src="images/cart/iPhone-7Plus_RoseGold.jpg">
-					            		</figure>
-					            		<a href="#" target="_blank" title="Apple iPhone 7 Plus 32GB">Apple iPhone 7 Plus 32GB</a>
-					            		<p class="p-color">
-					            			<label>Màu </label>
-					            			<select class="js-example-templating">
-												<option value="rosegold">Rose Gold</option>
-												<option value="black">Black</option>
-												<option value="silver">Silver</option>
-												<option value="gold">Gold</option>
-											</select>
-					            		</p>
-					            	</div>
-					            </div>
+		<div class="modal fade" id="scart_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h2 class="modal-title" id="myModalLabel">
+				<i class="fa fa-shopping-cart"></i> GIỎ HÀNG CỦA TÔI
+				<span>(Đang có <strong class="order_total_quantity">0</strong> sản phẩm)</span>
+				<span><a href="javascript:;" class="empty_cart"><i class="fa fa-remove"></i>Làm trống giỏ hàng</a></span>
+				</h2>
+				</div>
+					<div class="modal-body">
+						<div class="shopcart-ct">
+							<div class="cart-box row">
+								<div class="col-md-8">
+									<form action="#" method="POST" id="frm_order_items">
+										<div class="table cart-tbl">
+											<div class="table-row thead">
+												<div class="table-cell no-col">&nbsp;</div>
+												<div class="table-cell product-col">Sản phẩm</div>
+												<div class="table-cell price-col t-r">Đơn giá (đ)</div>
+												<div class="table-cell numb-col t-c">Số lượng</div>
+												<div class="table-cell total-col t-r">Thành tiền (đ)</div>
+											</div><!-- /table-row -->
+											<div class="tr-wrap">
+												<div class="table-row clearfix">
+													<div class="table-cell no-col"><span>1</span></div><!-- /table-cell no-col -->
+													<div class="table-cell product-col">
+														<figure class="img-prod">
+															<img alt="Sony High-Power Home Audio System MHC-V50D" src="images/cart/iPhone-7Plus_RoseGold.jpg">
+														</figure>
+														<a href="#" target="_blank" title="Apple iPhone 7 Plus 32GB">Apple iPhone 7 Plus 32GB</a>
+														<p class="p-color">
+														<label>Màu </label>
+														<select class="js-example-templating" data-width="165px">
+															<option value="rosegold">Rose Gold</option>
+															<option value="black">Black</option>
+															<option value="silver">Silver</option>
+															<option value="gold">Gold</option>
+														</select>
+														</p>
+													</div><!-- /table-cell product-col -->
+													<div class="table-cell price-col t-r">21.190.000</div><!-- /table-cell price-col t-r -->
+													<div class="table-cell numb-col t-c">
+														<select name="" size="1" class="change_quantity">
+															<option value="0">0</option>
+															<option value="1" selected="">1</option>
+															<option value="2">2</option>
+														</select> 
+													</div><!-- /table-cell numb-col t-c -->
+													<div class="table-cell total-col t-r">21.190.000</div><!-- /table-cell total-col t-r -->
+												</div>
+												<p class="upd-cart-line t-r">
+								                    <a href="javascript:;" class="updateCart">
+								                        <i class="fa fa-undo"></i>Cập nhật giỏ hàng
+								                    </a>
+								                </p>
+											</div><!-- /tr-wrap -->
+										</div><!-- /table cart-tbl -->
+										<p>* Thời gian phục vụ online từ 8:00 đến 19:00 (Từ Thứ Hai đến Chủ Nhật, ngày Lễ nghỉ)</p>
+									</form>
+								</div>
+								<div class="col-md-4">
+									<div class="checkout-box-col">
+										<table class="total-tbl f-r">
+											<tbody>
+												<tr>
+									                <td>Tổng tiền hàng:</td>
+									                <td class="t-r">21.190.000 đ&nbsp;</td>
+									            </tr>
+									            <tr>
+									                <td>Phí vận chuyển:</td>
+									                <td class="t-r">
+									                    <span class="ship_fee">0</span> đ
+									                    <br>
+									                </td>
+									            </tr>
+									            <tr>
+									                <td>Phí bảo hiểm vc:</td>
+									                <td class="t-r">
+									                    <span class="ship_insurance"></span> đ
+									                    <br>
+									                    <a href="#" target="_blank"><i class="fa fa-info-circle"></i>Cách tính phí</a>
+									                </td>
+									            </tr>
+									            <tr class="all-total">
+									                <td>Tổng số tiền:</td>
+									                <td class="totalmn t-r">21.190.000 đ</td>
+									            </tr>
+									            <tr>
+									                <td colspan="2" class="t-r">
+									                    Đã bao gồm VAT
+									                    <input type="hidden" name="total_money" id="total_money" value="21190000">
+									                    <input type="hidden" name="total_weight" id="total_weight" value="0">
+									                    <input type="hidden" name="ship_length" id="ship_length" value="0">
+									                    <input type="hidden" name="ship_width" id="ship_width" value="0">
+									                    <input type="hidden" name="ship_height" id="ship_height" value="0">
+									                    <input type="hidden" name="ship_default_from_district" id="ship_default_from_district" value="66">
+									                    <input type="hidden" name="ship_cost" id="ship_cost" value="0">
+									                    <input type="hidden" name="ship_cost_for_customer" id="ship_cost_for_customer" value="0">
+									                    <input type="hidden" name="ship_insurance" id="ship_insurance" value="0">
+									                    <input type="hidden" name="ship_high_value" id="ship_high_value" value="1:1:21190000">
+									                    <input type="hidden" name="status" id="status" value="order">
+									                </td>
+									            </tr>                    
+									        </tbody>
+										</table>
+										<div class="f-r chck-out-btn">
+								            <a href="javascript:;" class="checkout-btn" data-link="/orders/pre_checkout">THANH TOÁN</a>
+								            <a href="javascript:;" class="keep-buying">Hoặc tiếp tục mua hàng</a>
+								        </div>
+									</div>
+								</div>
 							</div>
-		        		</form>
-		        	</div>
-		        </div>
-		      </div>
-		    </div>
-		  </div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div><!-- /wrapper -->
 
