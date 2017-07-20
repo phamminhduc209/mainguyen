@@ -52,7 +52,18 @@
     $(this).next('.box-collapse').slideToggle(200);
   });
 
-  /*  [ Sticky Menu ] */
-  // $('.fixed-header').sticky({ topSpacing: 0 });
+  // Hover tag a show ul page Product
+  $('.dpl-status').hover(function() {
+    $(this).parent().toggleClass('shw');
+  });
+  // $('.block_status').hover(
+  //   function() {
+  //     $(this).find('.pro-sts').addClass('shw');
+  //   }, function() {
+  //     $(this).find('.pro-sts').removeClass('shw');
+  //   }
+  // );
+
+  
 
 })(jQuery); // End of use strict
