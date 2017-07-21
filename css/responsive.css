@@ -15,7 +15,7 @@
 [Styles for devices(<1200px)]
 */
 @media (min-width: 1200px) {
-  .main_de_old .container {
+  .container {
     width: 1200px;
   }
 }
