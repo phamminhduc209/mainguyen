@@ -64,6 +64,15 @@
   //   }
   // );
 
+  // POPUP order a product - check on info Payment
+  $('.info-payment .item-group > input[type="checkbox"]').on('change', function(e){
+      console.log($(this).attr('checked'));
+      if ($(this).is(':checked')) {
+          $(this).siblings('.sub-hide-box').show();
+      } else {
+          $(this).siblings('.sub-hide-box').hide();
+      }
+  });
   
 
 })(jQuery); // End of use strict
