@@ -3225,6 +3225,9 @@ select[multiple], select[size] {
   float: left;
   margin-left: 15px;
 }
+.block_customer-frm .filter-group .row-group .group-radio .radio-1:first-child {
+  margin-left: 0;
+}
 .radio-1 input {
   vertical-align: middle;
   margin: 0;
@@ -3773,4 +3776,7 @@ a.redirect-policy i {
 }
 .change_quantity {
   border: 1px solid #ddd;
+}
+.pre_checkout .block_cart_mobile {
+  display: none;
 }
