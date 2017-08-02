@@ -1474,7 +1474,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 .block_tableparameter td.title {
-  font-weight: bold;
+  font-weight: normal;
 }
 .btn_tableparameter {
   display: block;
@@ -1520,6 +1520,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #c0392b;
   padding: 8px;
+  font-weight: normal;
 }
 .table.parameterfull>tbody>tr>td,
 .table.parameterfull>tbody>tr>th,
@@ -3063,7 +3064,7 @@ select[multiple], select[size] {
   background-clip: padding-box;
 }
 .title {
-  font-family: 'UTMCafeta', Arial, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 24px;
   color: #000;
   padding: 0 10px;
@@ -3536,7 +3537,7 @@ a.redirect-policy i {
   top: 8px;
 }
 .block_news_content .block_news_related_in_content li a {
-  white-space: nowrap;
+  white-space: pre-line;
   display: inline-block;
   padding: 2px 10px 2px 0;
   color: #000;
@@ -3561,6 +3562,7 @@ a.redirect-policy i {
 /* News Related */
 .block_news_related {
   padding: 10px 20px 10px 20px;
+  overflow: hidden;
 }
 .block_news_related .block_title {
   color: #000;
@@ -3591,7 +3593,7 @@ a.redirect-policy i {
   top: 8px;
 }
 .block_news_related ul li a {
-  white-space: nowrap;
+  white-space: pre-line;
   display: inline-block;
   padding: 2px 10px 2px 0;
   color: #000;

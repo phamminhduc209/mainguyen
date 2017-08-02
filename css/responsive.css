@@ -244,6 +244,7 @@ Styles for devices max 800px
   }
   .navbar-left {
     float: none!important;
+    margin: 0;
   }
   .menu > ul.nav {
     border-bottom: none;
@@ -380,6 +381,10 @@ Styles for devices max 800px
     top: 20px;
     right: 15px;
   }
+  .block_news .block_cate_left,
+  .block_news .block_cate_right {
+    width: 100%;
+  }
 }
 
 /*----------------
@@ -412,6 +417,51 @@ Styles for devices max 767px
   .footer_top {
     display: none;
   }
+  .footer_bottom .logo {
+    display: inline-block;
+    margin-bottom: 0;
+    float: none;
+  }
+  .footer_bottom .copyright {
+    display: block;
+    margin-left: 0;
+    float: none;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  .ctact-frm-inner {
+    width: 100%;
+  }
+  .block_support .support_phone {
+    padding: 0 300px;
+  }
+  .block_support .support_phone::after {
+    left: 0;
+    right: 0;
+  }
+  .block_support .support_img::before {
+    left: 0;
+  }
+  .block_support .support_img::after {
+    right: 0;
+  }
+  .block-news-default-item img {
+    margin: 0 auto;
+  }
+  .list_news .item .block_thumb {
+    display: none;
+  }
+  .list_news .item:first-child h3 {
+    font-size: 16px;
+  }
+  .list_news { padding-left: 15px; }
+  .block-news-default-right .list_news .item {
+    overflow: visible;
+    list-style-type: disc;
+  }
+  .block_adv img {
+    margin: 0 auto;
+  }
 }
 
 /*----------------
@@ -420,6 +470,36 @@ Styles for devices max 600px
 @media (max-width: 600px) {
   .select2-container {
     width: 120px !important;
+  }
+  .block_after-payment .a-payment-ct {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px
+  }
+  .block_after-payment .a-payment-ct .a-payment-w {
+    padding: 10px;
+  }
+  .block_after-payment .a-payment-ct h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .block_after-payment .a-payment-ct p {
+    margin-bottom: 5px;
+  }
+  .bock_contact_info {
+    position: absolute;
+    bottom: 60px;
+    z-index: 10;
+    color: #fff;
+    left: 0;
+    margin-left: 0;
+  }
+  .block_support .support_phone {
+    padding: 0 200px;
+  }
+  .block_news_bot li .description figure {
+    display: none;
   }
 }
 
@@ -446,6 +526,45 @@ Styles for devices max 560px
   .shopcart-ct .table .table-cell.total-col {
     display: none;
   }
+  .bock_contact_info {
+    color: #000;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    bottom: 0;
+    margin-top: 20px;
+  }
+  .bock_contact_info .ctact-ifo-inner {
+    width: 100%;
+    text-align: left;
+  }
+  .bock_contact_info .ctact-ifo-inner .ctact-list span:first-child {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .bock_contact_info .ctact-ifo-inner .ctact-list span {
+    display: block;
+  }
+  .bock_contact_info .ctact-ifo-inner h2 {
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .bock_contact_info .ctact-ifo-inner .ctact-address {
+    margin-bottom: 5px;
+  }
+  .block_contact_note {
+    text-align: left;
+  }
+  .block_contact_note p.ctact-time {
+    text-align: left;
+  }
+  .block_contact_note .ctact-note-inner {
+    width: 100%;
+    text-align: left;
+  }
+  .ctact-frm-inner .frm-head p {
+    padding: 0 10px;
+  }
 }
 
 /*----------------
@@ -459,12 +578,70 @@ Styles for devices max 480px
   .shopcart-ct .table .table-cell.numb-col {
     text-align: right;
   }
+  .block_after-payment img {
+    display: none;
+  }
+  .block_after-payment .a-payment-ct {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+  }
+  .block_after-payment .a-payment-ct .a-payment-w {
+    padding: 0;
+  }
+  .block_after-payment .a-payment-ct h1 {
+    margin-bottom: 10px;
+  }
+  .block_support .support_phone {
+    padding: 0 150px;
+  }
+  .block_news_bot li .block_thumb {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  .block_news_bot li .block_thumb img {
+    margin: 0 auto;
+  }
+  .block_news_bot li .description {
+    width: calc(100% - 0px);
+  }
+  .block_news_bot li .description h3 {
+    text-align: center;
+  }
+  .block_news_bot li .description figure {
+    display: block;
+    text-align: center;
+    padding: 0 0 5px;
+  }
+  .block_news_bot li .description .timepost {
+    text-align: center;
+  }
+}
+
+/*----------------
+Styles for devices max 460px
+*/
+@media (max-width: 460px) {
+  .footer_bottom .block_pay, .footer_bottom .block_indus {
+    width: 100%;
+  }
 }
 
 /*----------------
 Styles for devices max 375px
 */
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+  .block_support .support_phone {
+    padding: 0 70px;
+  }
+  .block_product .list .product_item,
+  .list_de_old .pro_de_old li {
+    width: 100%;
+  }
+}
 
 /*----------------
 Styles for devices max 320px
