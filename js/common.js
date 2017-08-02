@@ -53,6 +53,7 @@
    * 3. Sticky Menu
   */
   $('.fixed').sticky({ topSpacing: 0 });
+  // $('.block_categories .block_cate_left').sticky({ topSpacing: 0 });
 
   /*
    * 4. Accordion has icon
@@ -111,6 +112,6 @@
   */
   $('.block_search_mobile .fa_search_show').on('click', function() {
     $('.block_search_mobile .block_search_inner').toggleClass('show');
-})
+  })
 
 })(jQuery); // End of use strict
