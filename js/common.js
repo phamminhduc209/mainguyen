@@ -53,7 +53,6 @@
    * 3. Sticky Menu
   */
   $('.fixed').sticky({ topSpacing: 0 });
-  // $('.block_categories .block_cate_left').sticky({ topSpacing: 0 });
 
   /*
    * 4. Accordion has icon
@@ -63,20 +62,6 @@
     $(this).toggleClass('opened');
     $(this).next('.box-collapse').slideToggle(200);
   });
-
-  /*
-   * 5. Hover tag a show ul page Product
-  */
-  $('.dpl-status').hover(function() {
-    $(this).parent().toggleClass('shw');
-  });
-  // $('.block_status').hover(
-  //   function() {
-  //     $(this).find('.pro-sts').addClass('shw');
-  //   }, function() {
-  //     $(this).find('.pro-sts').removeClass('shw');
-  //   }
-  // );
 
   /*
    * 6. POPUP order a product - check on info Payment
@@ -99,7 +84,9 @@
     $("body").toggleClass("menu-open");
   });
 
- /** Menu, Menu Mega Responsive **/
+  /*
+   * 7. Main Menu
+  */
   $(document).ready(function(){
     $('.menu ul li.parent').append('<span class="plus"></span>');
     $('.menu ul li.parent .plus').click(function(){
@@ -112,6 +99,6 @@
   */
   $('.block_search_mobile .fa_search_show').on('click', function() {
     $('.block_search_mobile .block_search_inner').toggleClass('show');
-  })
+  })  
 
 })(jQuery); // End of use strict

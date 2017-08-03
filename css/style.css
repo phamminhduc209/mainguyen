@@ -1738,7 +1738,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 .block_view .filter-prod {
-  display: block;
+  float: right;
+  display: none;
   color: #333;
   font-size: 12px;
   background-color: #ddd;
@@ -1751,12 +1752,21 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   padding: 1px 15px;
-  float: right;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+.block_view .filter-prod.active {
+  background-color: #db0000;
+  color: #ffffff;
+}
+.block_cate_left.sticky-filter {
+  position: fixed;
+  top: 50px !important;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Block Status */
@@ -1764,6 +1774,7 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
   width: 140px;
   position: relative;
+  height: 20px;
 }
 .block_view .block_status > .pro-sts {
   display: block;
