@@ -99,6 +99,13 @@
   */
   $('.block_search_mobile .fa_search_show').on('click', function() {
     $('.block_search_mobile .block_search_inner').toggleClass('show');
-  })  
+  })
+
+  if (!$('.pro-sts > a')) { return; }
+  $('.pro-sts').on( "mouseover", function() { 
+    $(this).addClass('shw');
+  }).on( "mouseout", function() {
+    $(this).removeClass('shw');
+  });
 
 })(jQuery); // End of use strict
