@@ -134,7 +134,6 @@ catpage_fn.orderProd = {
 /* ==================================================== */
 /* OnLoad Page */
 $(document).ready(function($){
-
 	catpage_fn.orderProd.showStatus ();
 	catpage_fn.orderProd.changeStatus ('.pro-sts li a', '.pro-sts', 'a.dpl-status');
 	catpage_fn.orderProd.showFilter ('.filter-prod');
