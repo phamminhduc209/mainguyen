@@ -425,9 +425,6 @@ Styles for devices max 800px
   .block_news .block_cate_right {
     width: 100%;
   }
-  .info-payment {
-    padding: 10px 0 5px 0;
-  }
   .block_checkout-frm .btn.callme-now {
     margin-left: 0;
   }
@@ -451,6 +448,10 @@ Styles for devices max 992px and min 481px
 Styles for devices max 767px
 */
 @media (max-width: 767px) {
+  .block_product .list .product_item,
+  .list_de_old .pro_de_old li {
+    width: 189px;
+  }
   .block_newshot .item {
     margin-bottom: 15px;
   }
@@ -560,6 +561,10 @@ Styles for devices max 767px
 Styles for devices max 600px
 */
 @media (max-width: 600px) {
+  .block_product .list .product_item,
+  .list_de_old .pro_de_old li {
+    width: 33.3333%;
+  }
   #scart_popup .select2-container {
     width: 120px !important;
   }
@@ -592,6 +597,18 @@ Styles for devices max 600px
   }
   .block_news_bot li .description figure {
     display: none;
+  }
+  .shopcart-ct .product-col {
+    width: 170px;
+  }
+  .soluong_mb,
+  .price_mb {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 11px;
+  }
+  .sl_mb select {
+    width: 40%;
   }
 }
 
@@ -731,7 +748,7 @@ Styles for devices max 375px
   }
   .block_product .list .product_item,
   .list_de_old .pro_de_old li {
-    width: 100%;
+    width: 50%;
   }
   .block_customer-frm .filter-group .row-group .group-radio,
   .block_customer-frm .filter-group .row-group .fullname {
