@@ -598,17 +598,28 @@ Styles for devices max 600px
   .block_news_bot li .description figure {
     display: none;
   }
-  .shopcart-ct .product-col {
-    width: 170px;
+  .block_order-bottom .block_order {
+    margin-top: 10px;
   }
-  .soluong_mb,
-  .price_mb {
-    display: inline-block;
-    font-weight: normal;
-    font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .block_detail_left {
+    width: 100%;
   }
-  .sl_mb select {
-    width: 40%;
+  .block_detail_right {
+    width: 100%;
+  }
+  .block_original {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .block_support .support_content {
+    text-align: center;
+  }
+  .block_support .support_content .block_pay > img {
+    margin: 0 auto;
   }
 }
 
@@ -674,6 +685,15 @@ Styles for devices max 560px
   .ctact-frm-inner .frm-head p {
     padding: 0 10px;
   }
+  .soluong_mb,
+  .price_mb {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 11px;
+  }
+  .sl_mb select {
+    width: 40%;
+  }
 }
 
 /*----------------
@@ -727,6 +747,11 @@ Styles for devices max 480px
   }
   .block_news_bot li .description .timepost {
     text-align: center;
+  }
+  .pre_checkout .checkout-title span {
+    margin-left: 0;
+    display: block;
+    margin-bottom: 10px;
   }
 }
 
