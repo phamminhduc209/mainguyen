@@ -324,11 +324,12 @@ h1, h2, h3, h4, h5, h6 {
   text-indent: -8000px;
   background: url(../images/home_p.png) no-repeat center 8px;
 }
-.menu .navbar-nav>li.menu-icon>a:hover {
+.menu .navbar-nav>li.menu-icon>a:hover,
+.menu .navbar-nav>li.menu-icon.active>a {
   background: url(../images/home_p.png) no-repeat center -27px;
 }
 .menu .navbar-nav>li:hover > a,
-.menu .navbar-nav>li.active {
+.menu .navbar-nav>li.active a {
   color: #db0000;
   background: #eee;
   zoom: 1;
@@ -338,14 +339,6 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
-/*.menu .navbar-nav>li.menu_black a {
-  background-color: #000;
-  color: #fff;
-}
-.menu .navbar-nav>li.menu_black:hover a {
-  background-color: #cb0000;
-  border-bottom: 4px solid #000;
-}*/
 .menu .navbar-nav .submenu {
   background: #fff;
   text-align: left;
