@@ -428,6 +428,12 @@ Styles for devices max 800px
   .block_checkout-frm .btn.callme-now {
     margin-left: 0;
   }
+  .block_filter .list > li {
+    margin: 0 10px;
+  }
+  .block_cate_top .list li {
+    margin: 0 10px;
+  }
 }
 
 /*----------------
@@ -445,12 +451,50 @@ Styles for devices max 992px and min 481px
 }
 
 /*----------------
+Styles for devices max 768px
+*/
+@media (max-width: 768px) {
+  .block_cate_top {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #ececec;
+    background: #f4f4f4;
+    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#f4f4f4),to(#fafafa));
+    background: -webkit-linear-gradient(top,#fafafa,#f4f4f4);
+    background: -moz-linear-gradient(top,#fafafa,#f4f4f4);
+    background: -ms-linear-gradient(top,#fafafa,#f4f4f4);
+    background: -o-linear-gradient(top,#fafafa,#f4f4f4);
+  }
+  .block_cate_top .list li {
+    float: left;
+    overflow: hidden;
+    height: 50px;
+    width: 20%;
+    display: block;
+    margin: 0;
+  }
+  .block_cate_top .list li a {
+    display: block;
+    font-size: 12px;
+    color: #4a4a4a;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .block_filter, .block_select_filter {
+    display: none;
+  }
+}
+
+/*----------------
 Styles for devices max 767px
 */
 @media (max-width: 767px) {
-  .block_product .list .product_item,
-  .list_de_old .pro_de_old li {
+  .block_product .list .product_item {
     width: 189px;
+  }
+  .list_de_old .pro_de_old li {
+    width: 184px;
   }
   .block_newshot .item {
     margin-bottom: 15px;

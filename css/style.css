@@ -2649,7 +2649,8 @@ select[multiple], select[size] {
 }
 
 /*===== Device Old =====*/
-.block_cate_top .list {
+/* Block Cate Top */
+.block_cate_top {
   position: relative;
   margin: 10px 0;
 }
@@ -2659,16 +2660,98 @@ select[multiple], select[size] {
 }
 .block_cate_top .list li a {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   color: #4a4a4a;
 }
 .block_cate_top .list li a:hover {
-  color: #f5a623;
+  color: #db0000;
 }
 .block_cate_top .list li.actused a {
-  color: #f5a623;
+  color: #db0000;
   font-weight: 600;
 }
+/* Block Filter */
+.block_filter {
+  position: relative;
+  margin: 10px 0;
+  padding: 9px 0;
+  display: block;
+  overflow: visible;
+  border: 1px solid #ececec;
+}
+.block_filter .list > li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.block_filter .list > li > a {
+  color: #db0000;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+}
+.block_filter .list li .manufacture {
+  display: none;
+  position: absolute;
+  top: 27px;
+  right: 0;
+  z-index: 9;
+  width: 320px;
+  padding: 15px;
+  border: 1px solid #ececec;
+  background: #f8f8f8;
+}
+.block_filter .list li .manufacture.manufunction {
+  width: 200px;
+}
+.block_filter .list li .manufacture.open {
+  display: block;
+}
+.manufacture ul li {
+  float: left;
+  width: 50%;
+}
+.manufunction ul li {
+  width: 100%;
+}
+.manufunction ul li label {
+  font-weight: normal;
+}
+.manufunction ul li label input {
+  margin: 0;
+  vertical-align: middle;
+}
+.manufacture ul li a {
+  display: block;
+  font-size: 12px;
+  color: #444;
+  padding: 3px 0;
+}
+.manufacture ul li a.actived,
+.manufacture ul li a:hover {
+  color: #db0000;
+}
+/* Block Select Filter */
+.block_select_filter {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin: 10px 0;
+}
+.block_select_filter a {
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding: 6px;
+  background: #288ad6;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.block_select_filter a.reset {
+  background: #c10017;
+}
+
 .list_de_old {
   display: block;
   overflow: hidden;

@@ -101,11 +101,27 @@
     $('.block_search_mobile .block_search_inner').toggleClass('show');
   })
 
+  /*
+   * 8. Show div child when hover parent
+  */
   if (!$('.pro-sts > a')) { return; }
   $('.pro-sts').on( "mouseover", function() { 
     $(this).addClass('shw');
   }).on( "mouseout", function() {
     $(this).removeClass('shw');
   });
+
+  /*
+   * 8. Click div parent show div child
+  */
+  $('.manu-other > a').on('click', function() {
+    $('.manufacture').slideUp();
+    $(this).toggleClass('clicked');
+    if ($(this).hasClass('clicked')) {
+      $(this).siblings('.manufacture').slideDown();
+    }else{
+      $(this).siblings('.manufacture').slideUp();
+    }
+  })
 
 })(jQuery); // End of use strict
