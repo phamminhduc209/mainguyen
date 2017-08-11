@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../images/home_p.png) no-repeat center -27px;
 }
 .menu .navbar-nav>li:hover > a,
-.menu .navbar-nav>li.active a {
+.menu .navbar-nav>li.active>a {
   color: #db0000;
   background: #eee;
   zoom: 1;
