@@ -473,6 +473,7 @@ Styles for devices max 768px
     float: left;
     overflow: hidden;
     width: 20%;
+    height: 50px;
     display: block;
     margin: 0;
   }

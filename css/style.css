@@ -2637,15 +2637,34 @@ select[multiple], select[size] {
   display: block;
   width: 30px;
   height: 30px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29);
-  border: 1px solid rgba(0, 0, 0, 0.2);
   text-align: center;
   line-height: 28px;
   font-size: 10px;
-  color: #FFF;
+  border: 2px solid #ddd;
 }
-.search-color li:hover, .search-color li.active {
+/*.search-color li:hover, .search-color li.active {
   border: 1px solid #252525;
+}*/
+.search-color li:hover a,
+.search-color li:hover a.active {
+  
+  border: 2px solid #999;
+}
+.search-color li a.active {
+  position: relative;
+  border: 2px solid #000;
+}
+.search-color li a.active:before {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 16px;
+  color: #333;
+}
+.search-color li a.active.back:before {
+  color: #fff;
 }
 
 /*===== Device Old =====*/
