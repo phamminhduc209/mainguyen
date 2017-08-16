@@ -2690,6 +2690,9 @@ select[multiple], select[size] {
   vertical-align: top;
   padding-right: 10px;
 }
+.block_filter .list li.filter-updown {
+  float: right;
+}
 .block_filter .list li .manufacture {
   display: none;
   position: absolute;

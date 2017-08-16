@@ -466,13 +466,26 @@ Styles for devices max 768px
     background: -ms-linear-gradient(top,#fafafa,#f4f4f4);
     background: -o-linear-gradient(top,#fafafa,#f4f4f4);
   }
+  .block_filter {
+    border: none;
+  }
   .block_cate_top .list li {
     float: left;
     overflow: hidden;
-    height: 50px;
     width: 20%;
     display: block;
     margin: 0;
+  }
+  .block_filter .list>li {
+    float: left;
+    overflow: hidden;
+    width: 25%;
+    text-align: center;
+    display: block;
+    margin: 0;
+  }
+  .block_cate_top .list li.actused {
+    background: #fff;
   }
   .block_cate_top .list li a {
     display: block;
@@ -481,8 +494,40 @@ Styles for devices max 768px
     padding: 10px 0;
     text-align: center;
   }
-  .block_filter, .block_select_filter {
+  .block_select_filter {
     display: none;
+  }
+  .block_filter .list {
+    position: relative;
+  }
+  .block_filter .list > li {
+    position: unset;
+  }
+  .block_filter .list > li.filter-price {
+    display: none;
+  }
+  .block_filter .list li.filter-updown {
+    float: none;
+  }
+  .block_filter .list li .manufacture {
+    right: 0;
+    left: 0;
+    width: auto;
+  }
+  .block_filter .list li .manufacture.manufunction {
+    width: 100%;
+  }
+  .block_filter .list li.filter-brand span {
+    display: none;
+  }
+  .block_filter .list li.parent-brand {
+    display: none;
+  }
+  .manufunction.manuprice li {
+    width: 50%;
+  }
+  .manufacture ul li {
+    text-align: left;
   }
 }
 
