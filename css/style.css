@@ -927,6 +927,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.block_product .list .product_item:nth-child(4n+1) {
+  clear: left;
+}
 .list .product_item a {
   display: block;
 }
