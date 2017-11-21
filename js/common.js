@@ -79,7 +79,7 @@
    * 7. Main Menu
   */
   $(".navbar-toggle").on( 'click', function() {
-    $( this ).toggleClass('has-open');
+    $(this).toggleClass('has-open');
     $("header .menu").toggleClass("has-open");
     $("body").toggleClass("menu-open");
   });

@@ -1084,6 +1084,32 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 36px;
   color: #288ad6;
 }
+.pro_de_old li.product_item-list-dv .de_old_img {
+  padding: 7px;
+}
+.pro_de_old li.product_item-list-dv .de_old_img .locked{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 30%;
+  font-size: 15px;
+  margin: 0 !important;
+  font-weight: normal;
+}
+.pro_de_old li.product_item-list-dv .product_info .price_title {
+  font-size: 13px;
+  color: #999
+}
+.pro_de_old li.product_item-list-dv .product_info .price_title span {
+  color: #5c5c5c;
+}
 
 /*===== Footer =====*/
 .footer_top {
