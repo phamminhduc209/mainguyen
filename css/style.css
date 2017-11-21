@@ -1084,9 +1084,6 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 36px;
   color: #288ad6;
 }
-.pro_de_old li.product_item-list-dv .de_old_img {
-  padding: 7px;
-}
 .pro_de_old li.product_item-list-dv .de_old_img .locked{
   position: absolute;
   top: 0;
