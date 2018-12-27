@@ -353,58 +353,58 @@
 									<div class="row">
 										<div class="col-md-7 col-sm-7 col-xs-12 product_detail_img">
 											<div class="product-image">
-					                            <div class="bxslider product-img-gallery">
-					                                <div class="item">
-					                                	<a href="images/detail/large/1.jpg" data-lightbox="roadtrip">
+					                            <ul class="bxslider product-img-gallery" id="anchor-tag">
+					                                <li class="item" data-src="images/detail/large/1.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/1.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                                <div class="item">
-					                                	<a href="images/detail/large/2.jpg" data-lightbox="roadtrip">
+					                                </li>
+					                                <li class="item" data-src="images/detail/large/2.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/2.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                                <div class="item">
-					                                	<a href="images/detail/large/3.jpg" data-lightbox="roadtrip">
+					                                </li>
+					                                <li class="item" data-src="images/detail/large/3.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/3.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                                <div class="item">
-					                                	<a href="images/detail/large/4.jpg" data-lightbox="roadtrip">
+					                                </li>
+					                                <li class="item" data-src="images/detail/large/4.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/4.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                                <div class="item">
-					                                	<a href="images/detail/large/5.jpg" data-lightbox="roadtrip">
+					                                </li>
+					                                <li class="item" data-src="images/detail/large/5.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/5.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                                <div class="item">
-					                                	<a href="images/detail/large/6.jpg" data-lightbox="roadtrip">
+					                                </li>
+					                                <li class="item" data-src="images/detail/large/6.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/6.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                                <div class="item">
-					                                	<a href="images/detail/large/7.jpg" data-lightbox="roadtrip">
+					                                </li>
+					                                <li class="item" data-src="images/detail/large/7.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/7.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                                <div class="item">
-					                                	<a href="images/detail/large/8.jpg" data-lightbox="roadtrip">
+					                                </li>
+					                                <li class="item" data-src="images/detail/large/8.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/8.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                                <div class="item">
-					                                	<a href="images/detail/large/9.jpg" data-lightbox="roadtrip">
+					                                </li>
+					                                <li class="item" data-src="images/detail/large/9.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/9.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                                <div class="item">
-					                                	<a href="images/detail/large/10.jpg" data-lightbox="roadtrip">
+					                                </li>
+					                                <li class="item" data-src="images/detail/large/10.jpg">
+					                                	<a href="#">
 					                                    	<img src="images/detail/large/10.jpg" alt="#" />
 					                                    </a>
-					                                </div>
-					                            </div><!-- /product-img-gallery -->
+					                                </li>
+					                            </ul><!-- /product-img-gallery -->
 					                            <div class="product-img-thumb">
 					                                <div id="gallery_01" class="pro-thumb-img">
 					                                    <div class="item">
@@ -1024,21 +1024,18 @@
 	<!-- Js bxslider -->
 	<script src="lib/bxslider/bxslider.min.js"></script>
 	<!-- LightBox -->
-	<script src="lib/lightbox/js/lightbox.js"></script>
+	<script src="lib/lightGallery/dist/js/lightgallery.min.js"></script>
+	<script src="lib/lightGallery/modules/lg-thumbnail.min.js"></script>
+	<script src="lib/lightGallery/modules/lg-zoom.min.js"></script>
 	<!-- sticky -->
     <script src="lib/sticky/jquery.sticky.js"></script>
 	<!-- Js Common -->
 	<script src="js/common.js"></script>
 	<script>
         $(document).ready(function () {
-        	lightbox.option({
-				'resizeDuration': 700,
-				'wrapAround': true,
-				'showImageNumberLabel': false,
-				'fadeDuration': 700,
-				'positionFromTop': 50,
-			});
-
+			$('#anchor-tag').lightGallery({
+				thumbnail: true
+			}); 
             $(".bxslider").bxSlider({
             	controls: false,
                 pagerCustom: '.pro-thumb-img',
